@@ -1,37 +1,71 @@
-Housing Price Prediction (MLOps Assignment 1)
-This repository contains a complete MLOps pipeline to predict Boston housing prices using classical regression models. It includes modular Python code, GitHub Actions CI, and hyperparameter tuning using GridSearchCV.
+# Housing Price Prediction (MLOps Assignment 1)
 
-🔗 GitHub Repository Link (for Report)
-https://github.com/Rojalin-V/HousingRegression_G24AI1123
+This repository contains a complete MLOps pipeline to predict **Boston housing prices** using classical regression models. It includes **modular Python code**, **GitHub Actions CI**, and **hyperparameter tuning** using `GridSearchCV`.
 
-Project Progress Summary
- Set up conda environment (mlops_assignment)
- Loaded Boston Housing dataset manually (as required)
- Implemented 3 regression models:
-Linear/Ridge Regression
-Decision Tree Regressor
-Random Forest Regressor
- Compared models using MSE and R²
- Created separate reg and hyper branches
- Tuned 3+ hyperparameters per model with GridSearchCV
- Created and configured CI/CD with GitHub Actions
- Merged reg and hyper to main
- Prepared final report for submission
-Folder Structure
-HousingRegression/ │ ├── .github/ │ └── workflows/ │ └── ci.yml # GitHub Actions workflow for CI │ ├── utils.py # Loads and prepares the dataset ├── regression.py # Trains and evaluates baseline models ├── hyperparameter_tuning.py # Performs hyperparameter tuning ├── requirements.txt # List of required Python packages ├── README.md
+---
 
-Dataset Used
-Boston Housing Dataset
-Loaded manually using code from: http://lib.stat.cmu.edu/datasets/boston
-Target variable: MEDV (Median house value in $1000s)
-Evaluation Metrics
+## 🔗 GitHub Repository Link (for Report)
+(https://github.com/Rojalin-V/HousingRegression_G24AI1123)
+
+---
+
+## Project Progress Summary
+
+- [x] Set up `conda` environment (`mlops_assignment`)
+- [x] Loaded Boston Housing dataset manually (as required)
+- [x] Implemented 3 regression models:
+  - Linear/Ridge Regression
+  - Decision Tree Regressor
+  - Random Forest Regressor
+- [x] Compared models using **MSE** and **R²**
+- [x] Created separate `reg` and `hyper` branches
+- [x] Tuned 3+ hyperparameters per model with `GridSearchCV`
+- [x] Created and configured **CI/CD** with GitHub Actions
+- [x] Merged `reg` and `hyper` to `main`
+- [x] Prepared final report for submission
+
+---
+
+## Folder Structure
+
+HousingRegression/
+│
+├── .github/
+│ └── workflows/
+│ └── ci.yml # GitHub Actions workflow for CI
+│
+├── utils.py # Loads and prepares the dataset
+├── regression.py # Trains and evaluates baseline models
+├── hyperparameter_tuning.py # Performs hyperparameter tuning
+├── requirements.txt # List of required Python packages
+├── README.md 
+
+
+---
+
+## Dataset Used
+
+- **Boston Housing Dataset**  
+- Loaded manually using code from:
+  http://lib.stat.cmu.edu/datasets/boston  
+- Target variable: `MEDV` (Median house value in $1000s)
+
+---
+
+## Evaluation Metrics
+
 All models are evaluated using:
 
-Mean Squared Error (MSE)
-R² Score
+- **Mean Squared Error (MSE)**
+- **R² Score**
+
 A comparison is included in the final report PDF.
 
-How to Run
+---
+
+## How to Run
+
+```bash
 # Activate conda environment
 conda activate mlops_assignment
 
